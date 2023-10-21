@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
       function validates(){ if(email.value==""){
+        var email= document.getElementById("email");
             email.placeholder="Please input your own business email";
             bil1.focus();
             return false;
@@ -184,7 +185,7 @@
 
       <div class="row" style="padding: 50px 0px;">
         <div class="col">
-          <form action="https://www.artstation.com/ann_maulina" method="get" onsubmit="return validates();">
+          <form action="https://www.artstation.com/ann_maulina" method="" onsubmit="return validates();">
 
             <div class="form-group">
                 <label class="text-light"for="email" style="font-weight: bold;">Email for Contact</label>
