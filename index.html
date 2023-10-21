@@ -17,6 +17,7 @@
         if(email.value==""){
         email.placeholder="Please input your own business email";
         email.value = '';
+        masukan.value = '';
         bil1.focus();
         return false;
 
@@ -24,6 +25,7 @@
         if (!regex.test(email.value)&&email.value=="") {
           email.placeholder="Please input your own business email CORRECTLY"
           email.value = '';
+          masukan.value = '';
           return false;
         }
         else {return true}
