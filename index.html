@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
-      if(email.value==""){
+      function validates(){ if(email.value==""){
             email.placeholder="Please input your own business email";
             bil1.focus();
             return false;
@@ -19,6 +19,8 @@
         if (!regex.test(email.value)) {
           email.placeholder="Please input your own business email CORRECTLY"
         }
+      }
+     
 
     </script>
 
@@ -186,7 +188,7 @@
 
             <div class="form-group">
                 <label class="text-light"for="email" style="font-weight: bold;">Email for Contact</label>
-                <input type="text" id="email" class="form-control">
+                <input type="text" id="email" class="form-control" placeholder="mohon diisi">
             </div>
     
             <input type="submit" value="KIRIM" class="btn btn-primary">    </form>
