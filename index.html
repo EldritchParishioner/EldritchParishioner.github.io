@@ -9,17 +9,21 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
-      function validates(){ if(email.value==""){
-        var email= document.getElementById("email");
-            email.placeholder="Please input your own business email";
-            bil1.focus();
-            return false;
-
-        }
+      function validates(){ 
         const regex = /^[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var email= document.getElementById("email");
+
+        if(email.value==""){
+        email.placeholder="Please input your own business email";
+        bil1.focus();
+        return false;
+
+        } 
         if (!regex.test(email.value)) {
           email.placeholder="Please input your own business email CORRECTLY"
+          return false;
         }
+        else {return true}
       }
      
 
