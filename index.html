@@ -22,7 +22,7 @@
         return false;
 
         } 
-        if (!regex.test(email.value)) {
+        if (!regex.test(email.value)||email.value='') {
           email.placeholder="Please input your own business email CORRECTLY"
           email.value = '';
           masukan.value = '';
@@ -221,14 +221,14 @@
             <input type="submit" value="KIRIM" class="btn btn-primary">    </form>
     
         </div>
-        <div class="col" style="margin-top: auto;margin-bottom: auto;display: block;">
+        <div class="col" style="margin-bottom: auto;display: block;">
           <p data-aos="fade-left" data-aos-delay="200" class="text-light " style="font-weight: bold;"> For further communication or work related stuff like freelance. you can input your ow email for m to clarifiy much more information onto you. Thank you !</p>
 
         </div>
       </div>
       
     </div>
-    <footer class="bg-dark ">
+    <footer class="container-fluid bg-dark " style="padding: 40px 0px;">
       <div class="row justify-content-end text-light" style="font-weight: bold;padding: 20px 10px;">
         <div class="col-3">@All Right Reserved for Ann Maulana</div>
        
