@@ -22,13 +22,15 @@
         return false;
 
         } 
-        if (!regex.test(email.value)||email.value='') {
-          email.placeholder="Please input your own business email CORRECTLY"
-          email.value = '';
+        if (regex.test(email.value)) {
+          
           masukan.value = '';
+          return true;
+        }else {r
+          email.placeholder="Please input your own business email CORRECTLY";
+          email.value = '';
           return false;
         }
-        else {return true;}
       }
      
 
@@ -221,7 +223,7 @@
             <input type="submit" value="KIRIM" class="btn btn-primary">    </form>
     
         </div>
-        <div class="col" style="margin-bottom: auto;display: block;">
+        <div class="col" style="margin-bottom: auto; margin-top:auto;display: block;">
           <p data-aos="fade-left" data-aos-delay="200" class="text-light " style="font-weight: bold;"> For further communication or work related stuff like freelance. you can input your ow email for m to clarifiy much more information onto you. Thank you !</p>
 
         </div>
