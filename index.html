@@ -22,15 +22,15 @@
         return false;
 
         } 
-        if (regex.test(email.value)) {
+        if (!regex.test(email.value)) {
           
-          
-          return true;
-        }else {
           email.placeholder="Please input your own business email CORRECTLY";
           email.value = '';
           masukan.value = ''
           return false;
+          ;
+        }else {
+          return true;
         }
       }
      
