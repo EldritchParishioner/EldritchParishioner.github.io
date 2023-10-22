@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
       function validates(){ 
-        const regex =/^[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        const regex = /^[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         var email= document.getElementById("email");
         var masukan= document.getElementById("masukan");
 
@@ -22,7 +22,7 @@
         return false;
 
         } 
-        if (!regex.test(email.value)&&email.value==" ") {
+        if (!regex.test(email.value)) {
           email.placeholder="Please input your own business email CORRECTLY"
           email.value = '';
           masukan.value = '';
@@ -213,7 +213,7 @@
             </div>
             <div class="form-group"data-aos="fade-down" data-aos-delay="300" >
               <label class="text-light"for="masukan" style="font-weight: bold;">Messages</label>
-              <input type="text" id="masukan" class="form-control" style="bottom: 50px;" placeholder="optional">
+              <input type="text" id="masukan" class="form-control"  placeholder="optional">
             </div>
     
             <input type="submit" value="KIRIM" class="btn btn-primary">    </form>
